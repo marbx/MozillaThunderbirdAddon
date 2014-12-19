@@ -1,0 +1,6 @@
+rm -f     addresslabel.xpi 
+cd        addresslabel
+zip -r ../addresslabel.xpi * -x \*~ *.DS_Store
+cd ..
+
+

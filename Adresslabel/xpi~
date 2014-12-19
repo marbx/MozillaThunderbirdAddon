@@ -1,0 +1,6 @@
+rm        addresslabel.xpi 
+cd        addresslabel
+zip -r ../addresslabel.xpi *
+cd ..
+
+

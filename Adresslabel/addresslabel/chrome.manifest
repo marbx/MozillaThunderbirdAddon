@@ -1,0 +1,16 @@
+# 
+# https://developer.mozilla.org/de/docs/Chrome_Registration
+# 
+content addresslabel       chrome/content/
+locale  addresslabel de    chrome/locale/de/
+locale  addresslabel en    chrome/locale/en/
+locale  addresslabel es    chrome/locale/es/
+locale  addresslabel fr    chrome/locale/fr/
+locale  addresslabel hu    chrome/locale/hu/
+locale  addresslabel it    chrome/locale/it/
+locale  addresslabel ja-JP chrome/locale/ja-JP/
+locale  addresslabel nl    chrome/locale/nl/
+locale  addresslabel ru    chrome/locale/ru/
+locale  addresslabel sr    chrome/locale/sr/
+locale  addresslabel zh    chrome/locale/zh/
+overlay chrome://messenger/content/addressbook/addressbook.xul chrome://addresslabel/content/addressbook.xul

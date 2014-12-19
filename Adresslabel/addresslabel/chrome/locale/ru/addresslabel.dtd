@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Наклейки с адресами отправителя">
+<!ENTITY generateAddressLabel0 "Наклейки без адресов отправителя">
+<!ENTITY settings.label "Установки">
+<!ENTITY Input.label "Input">
+<!ENTITY choosePrimaryAddress "Тип адреса">
+<!ENTITY Home.label "Домашний">
+<!ENTITY Work.label "Служебный">
+<!ENTITY addressFailure.label "Если не достаёт названия улицы или города">
+<!ENTITY Trysecondary.label "выберите другой тип адреса">
+<!ENTITY Printanyhow.label "всё равно распечатать">
+<!ENTITY Skip.label "отменить">
+<!ENTITY name_ord.label "Расположение по фамилии">
+<!ENTITY name_ordFL.label "Имя Фамилия">
+<!ENTITY name_ordLF.label "Фамилия Имя">
+<!ENTITY company_loc.label "Фирма">
+<!ENTITY company_loc1.label "Над именами">
+<!ENTITY company_loc2.label "Под именами">
+<!ENTITY company_loc0.label "Не печатать">
+<!ENTITY sender.label "Строка отправителя">
+<!ENTITY ignoreCountry "Эту страну не печатать">
+<!ENTITY Labellayout.label "Макет страницы">
+<!ENTITY NOFcolumns "Наклейки в ряд">
+<!ENTITY NOFrows "Наклейки в колонку">
+<!ENTITY labelMarginL "Рамка этикетки слева (в мм)">
+<!ENTITY labelMarginT "Рамка этикетки сверху (в мм)">
+<!ENTITY paperMarginL "Рамка страницы слева (в мм)">
+<!ENTITY paperMarginT "Рамка страницы сверху (в мм)">
+<!ENTITY Fsize.label "Размер шрифта">
+<!ENTITY FontSize0 "Отправитель">
+<!ENTITY FontSize1 "Получатель">
+<!ENTITY Output.label "Output">
+<!ENTITY format.label "Формат">
+<!ENTITY formatStory1.label "PostScript и Pdf ограничены до Iso Latin-1">
+<!ENTITY formatStory2.label "Word не может открыть OpenDocument-файл, LibreOffice без проблем.">
+<!ENTITY contact.label "eMail разработчику">

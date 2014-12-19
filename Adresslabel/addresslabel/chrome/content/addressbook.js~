@@ -1,0 +1,290 @@
+//
+//  Thanks to addons.mozilla.org/de/thunderbird/user/FabianL
+//
+
+var border; 
+var senderAddress;
+var FontSize0;
+var FontSize1;
+var NOFcolumn;
+var NOFrows;
+var rowHeight;
+var tableWidth;
+var cellWidth;
+var cellborder;
+var dottedLines;
+var paperMarginLeft;
+var paperMarginTop;
+var paperMarginTopFP;
+var primaryAddressType;
+var addressFailure;
+var firstpageoffset;
+var ignoreCountry;
+var fileContent;
+
+function poorLog(amess) {
+    //alert(amess); 
+    poorWriteToConsole(amess) 
+}
+
+// margin-top broken or not understood for body and table
+// div.doFP cannot take negative arguments but needs to.
+// ...research....
+
+function docBegin(){
+    if (outputformat == "html") {
+	var d = ""
+	    //	    + "<html><head><meta charset=\"utf-8\"><style type=\"text/css\">\n" //////////// How to write UTF-8 ?????????????????????
+	    + "<html><head><style type=\"text/css\">\n"
+	    + "  body     {margin-left:"+paperMarginLeft+"mm; font-family:sans-serif}\n"
+	    + "  table    {border-spacing:"+cellborder+"mm; width:"+tableWidth+"mm; table-layout:fixed; border:" +dottedLines+ "px dotted}\n"
+	    + "  tr       {height:" + rowHeight+"mm}\n"
+	    + "  td       {border:" + dottedLines + "px dotted; vertical-align:top;font-size:" + FontSize1 +  "pt}\n"
+	    + "  p.doXS   {font-size:" + FontSize0 +  "pt}\n"
+	    + "  div.doFP {height:"+paperMarginTopFP+"mm}\n"
+	    + "  div.doPB {height:"+paperMarginTop+"mm;  page-break-before:always}\n"
+	    + "</style></head><body>\n";
+	poorLog(d);
+	return d;
+    }
+    return "(doc(\n";
+}
+
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////// lib 
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+var outputformat = "html";
+
+function docEnd(){
+    if (outputformat == "html")
+	return "</body></html>\n";
+    return ")doc)\n";
+}
+function tableBegin(){
+    if (outputformat == "html")
+	return "<table>\n";
+    return "(table(\n";
+}
+function tableEnd(){
+    if (outputformat == "html")
+	return "</table>\n";
+    return ")table)\n";
+}
+function rowBegin(){
+    if (outputformat == "html")
+	return "<tr>\n";
+    return "(row(\n";
+}
+function rowEnd(){
+    if (outputformat == "html")
+	return "</tr>\n";
+    return ")row)\n";
+}
+function cellBegin(){
+    if (outputformat == "html")
+	return "<td><p class=\"doXS\">" + senderAddress +  "</p>\n";
+    return "(cell(";
+}
+function cellEnd(){
+    if (outputformat == "html")
+	return "</td>\n";
+    return ")cell)\n";
+}
+function newline(){
+    if (outputformat == "html")
+	return "<br/>\n";
+    return "\n";
+}
+function firstpage(){
+    if (outputformat == "html")
+	return "<div class=\"doFP\"></p>\n"; // research...
+    return "\n";
+}
+function pagebreak(){
+    if (outputformat == "html")
+	return "<div class=\"doPB\"></p>\n";
+    return "\n";
+}
+function generateStructure(adr){
+    try {
+	var count1 = 0;
+	var rowClosed = false;
+	var tableClosed = false;
+	fileContent = "";
+	fileContent += docBegin();
+	fileContent = fileContent + firstpage();
+	fileContent = fileContent + tableBegin();
+	fileContent = fileContent + rowBegin();
+	for(var x in adr){
+	    count1 = count1 + 1;
+	    if (tableClosed) {
+		tableClosed = false;
+		fileContent = fileContent + pagebreak() + tableBegin();
+	    }
+	    if (rowClosed) {
+		rowClosed = false;
+		fileContent = fileContent + rowBegin();
+	    }
+	    fileContent = fileContent 
+		+ cellBegin() 
+		+ adr[x].company + newline()
+		+ adr[x].name + newline()
+		+ adr[x].street + newline()
+		+ adr[x].zipcode+" "+adr[x].city + newline()
+		+ adr[x].country
+		+ cellEnd();
+	    if (count1 % NOFcolumns == 0) {
+		fileContent = fileContent + rowEnd();
+		rowClosed = true;
+	    }
+	    if (count1 % (NOFcolumns * NOFrows) == 0) {
+		fileContent = fileContent + tableEnd();
+		tableClosed = true;
+	    }
+	}
+	if (!rowClosed) fileContent = fileContent + rowEnd();
+	if (!tableClosed) fileContent = fileContent + tableEnd();
+	fileContent = fileContent + docEnd();
+    } catch (e) {
+	alert(e); 
+    }
+}
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+////////// lib  END
+/////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////
+
+
+function poorWriteToConsole(aMessage) {
+    var consoleService = Components.classes["@mozilla.org/consoleservice;1"].getService(Components.interfaces.nsIConsoleService);
+    consoleService.logStringMessage("Adress label: " + aMessage);
+}
+function getAddr(card){
+    try{
+	var secondaryAddressType;
+	if (primaryAddressType == "Work") secondaryAddressType = "Home"; else secondaryAddressType = "Work";
+	var TBcompany = card.getProperty("Company", "");
+	var _pa = primaryAddressType + "Address";    var pa = card.getProperty(_pa, "");
+	var _pz = primaryAddressType + "ZipCode";    var pz = card.getProperty(_pz, "");
+	var _pc = primaryAddressType + "City";       var pc = card.getProperty(_pc, "");
+	var _pY = primaryAddressType + "Country";    var pY = card.getProperty(_pY, "");
+	var _sa = secondaryAddressType + "Address";  var sa = card.getProperty(_sa, "");
+	var _sz = secondaryAddressType + "ZipCode";  var sz = card.getProperty(_sz, "");
+	var _sc = secondaryAddressType + "City";     var sc = card.getProperty(_sc, "");
+	var _sY = secondaryAddressType + "Country";  var sY = card.getProperty(_sY, "");
+	
+	if (pY == ignoreCountry) { pY  = ""; }
+	if (sY == ignoreCountry) { sY  = ""; }
+
+	if (pa.length == 0 || pc.length == 0) {
+	    // Primary address error
+	    if (addressFailure == "skip"){
+		return null;
+	    }
+	    if (addressFailure == "pass"){
+		return {name: card.displayName, street: pa, zipcode: pz, city: pc, country: pY, company: TBcompany};
+	    }
+	    if (addressFailure == "second"){
+		if(sa.length == 0 || sc.length == 0) {
+		    return null;
+		} else {
+		    return {name: card.displayName, street: sa, zipcode: sz, city: sc, country: sY, company: TBcompany};
+		}
+	    }
+	}
+	
+	return {name: card.displayName, street: pa, zipcode: pz, city: pc, country: pY, company: TBcompany};
+    } catch (e) {
+	alert(e); 
+    }
+}
+function writeToFile(contents){
+    try {
+	poorLog("writeToFile start");
+	var filePicker = Components.classes["@mozilla.org/filepicker;1"].createInstance(Components.interfaces.nsIFilePicker);
+	filePicker.init(window, "Save as html", 1);
+	//filepicker.defaultString = "o.html";     /////////////////////////////////////////////////////////////////FAIL
+	poorLog("writeToFile here");
+	filePicker.appendFilter("html", "*.html");
+	// test whether the user did not hit "cancel"
+	if(filePicker.show() != 1){
+	    var filename = filePicker.file; // das ist das Objekt, nicht der Name
+	    var stream = Components.classes["@mozilla.org/network/safe-file-output-stream;1"].createInstance(Components.interfaces.nsIFileOutputStream);  
+	    poorLog("writeToFile stream start");
+	    stream.init(filePicker.file, 0x04 | 0x08 | 0x20, 0600, 0); 
+	    stream.write(contents, contents.length);  
+	    poorLog("writeToFile stream DONE");
+	    if(stream instanceof Components.interfaces.nsISafeOutputStream){  
+		stream.finish();  
+	    } else {  
+		stream.close();  
+	    }
+	    filePicker.file.launch();
+	}
+	poorLog("writeToFile DONE");
+    } catch (e) {
+	alert(e); 
+    }
+}
+function walkSelectedAddresses(){
+    try {
+	poorLog("walkSelectedAddresses START");
+	var cards = GetSelectedAbCards();
+	var addresses = new Array();
+	for(var i in cards){
+	    poorLog("walkSelectedAddresses i name =" + i + "  " + cards[i].displayName);
+	    var card = cards[i];
+	    if(cards[i].isMailList){
+		continue;
+	    }
+	    var address = getAddr(card);
+	    if (address != null) addresses.push(address);
+	}
+	return addresses;
+    } catch (e) {
+	alert(e); 
+    }
+}        
+function generateAddressLabel(){
+    try {
+	poorLog("generateAddressLabel START");
+	
+	var prefs = Components.classes["@mozilla.org/preferences-service;1"]
+	    .getService(Components.interfaces.nsIPrefService)
+	    .getBranch("extensions.addresslabel.");
+	prefs.QueryInterface(Components.interfaces.nsIPrefBranch);
+	
+	poorLog("generateAddressLabel prefs START");
+	
+	senderAddress      = prefs.getCharPref("senderAddress");
+	NOFcolumns         = prefs.getCharPref("NOFcolumns");
+	NOFrows            = prefs.getCharPref("NOFrows");
+	cellWidth          = prefs.getCharPref("cellWidth");
+	tableWidth         = Number(NOFcolumns) * Number(cellWidth);
+	rowHeight          = prefs.getCharPref("rowHeight");
+	paperMarginLeft    = prefs.getCharPref("paperMarginLeft");
+	paperMarginTop     = prefs.getCharPref("paperMarginTop");
+	primaryAddressType = prefs.getCharPref("addressType");
+	addressFailure     = prefs.getCharPref("addressFailure");
+	ignoreCountry      = prefs.getCharPref("ignoreCountry");
+	FontSize0          = prefs.getCharPref("FontSize0");
+	FontSize1          = prefs.getCharPref("FontSize1");
+	dottedLines        = prefs.getCharPref("dottedLines");
+	cellborder         = prefs.getCharPref("cellborder");
+	firstpageoffset    = prefs.getCharPref("firstpageoffset");
+	paperMarginTopFP   = Number(paperMarginTop) + Number(firstpageoffset);
+	
+	poorLog("generateAddressLabel prefs DONE");
+		
+	generateStructure(walkSelectedAddresses());
+
+	poorLog("generateAddressLabel write start");
+	writeToFile(fileContent);
+	poorLog("generateAddressLabel write DONE");
+    } catch (e) {
+	alert(e); 
+    }
+}

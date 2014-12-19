@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Address label with sender">
+<!ENTITY generateAddressLabel0 "Address label without sender">
+<!ENTITY settings.label "Settings">
+<!ENTITY Input.label "Input">
+<!ENTITY choosePrimaryAddress "Address">
+<!ENTITY Home.label "Home">
+<!ENTITY Work.label "Work">
+<!ENTITY addressFailure.label "If address is missing">
+<!ENTITY Trysecondary.label "try other address">
+<!ENTITY Printanyhow.label "print anyway">
+<!ENTITY Skip.label "skip">
+<!ENTITY name_ord.label "Name order">
+<!ENTITY name_ordFL.label "First name, last name">
+<!ENTITY name_ordLF.label "Last name, first name ">
+<!ENTITY company_loc.label "Company">
+<!ENTITY company_loc1.label "Above name">
+<!ENTITY company_loc2.label "Below name">
+<!ENTITY company_loc0.label "Not shown">
+<!ENTITY sender.label "Sender address">
+<!ENTITY ignoreCountry "Do not print this country name">
+<!ENTITY Labellayout.label "Layout">
+<!ENTITY NOFcolumns "Cards horizontally (columns)">
+<!ENTITY NOFrows "Cards vertically (rows)">
+<!ENTITY labelMarginL "Label margin left (mm)">
+<!ENTITY labelMarginT "Label margin top (mm)">
+<!ENTITY paperMarginL "Sheet margin left (mm)">
+<!ENTITY paperMarginT "Sheet margin top (mm)">
+<!ENTITY Fsize.label "Font sizes (in points)">
+<!ENTITY FontSize0 "Sender">
+<!ENTITY FontSize1 "Receiver">
+<!ENTITY Output.label "Output">
+<!ENTITY format.label "Format">
+<!ENTITY formatStory1.label "PostScript and Pdf are limited to Iso Latin-1">
+<!ENTITY formatStory2.label "Use LibreOffice for OpenDocument">
+<!ENTITY contact.label "Mail to the programmer">

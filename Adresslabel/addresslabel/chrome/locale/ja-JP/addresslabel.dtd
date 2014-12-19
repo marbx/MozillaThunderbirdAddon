@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "宛名ラベルを出力 (差出人あり)">
+<!ENTITY generateAddressLabel0 "宛名ラベルを出力 (差出人なし)">
+<!ENTITY settings.label "設定">
+<!ENTITY Input.label "入力設定">
+<!ENTITY choosePrimaryAddress "優先アドレス">
+<!ENTITY Home.label "自宅">
+<!ENTITY Work.label "勤務先">
+<!ENTITY addressFailure.label "優先アドレスがない場合">
+<!ENTITY Trysecondary.label "別のアドレスを使用する">
+<!ENTITY Printanyhow.label "強制印刷する">
+<!ENTITY Skip.label "この人をスキップする">
+<!ENTITY name_ord.label "名前の表示順">
+<!ENTITY name_ordFL.label "名、姓">
+<!ENTITY name_ordLF.label "姓、名">
+<!ENTITY company_loc.label "会社名">
+<!ENTITY company_loc1.label "名前の上">
+<!ENTITY company_loc2.label "名前の下">
+<!ENTITY company_loc0.label "表示しない">
+<!ENTITY sender.label "差出人アドレス">
+<!ENTITY ignoreCountry "次の国名は印刷しない">
+<!ENTITY Labellayout.label "ラベルのレイアウト">
+<!ENTITY NOFcolumns "水平方向 (列数)">
+<!ENTITY NOFrows "垂直方向 (行数)">
+<!ENTITY labelMarginL "左マージン (mm)">
+<!ENTITY labelMarginT "上マージン (mm)">
+<!ENTITY paperMarginL "用紙の左マージン (mm)">
+<!ENTITY paperMarginT "用紙の上マージン (mm)">
+<!ENTITY Fsize.label "フォントサイズ (pt)">
+<!ENTITY FontSize0 "差出人">
+<!ENTITY FontSize1 "受取人">
+<!ENTITY Output.label "出力設定">
+<!ENTITY format.label "フォーマット">
+<!ENTITY formatStory1.label "PostScript および PDF は ISO Latin-1 に制限されています (日本語は正しく出力されません)">
+<!ENTITY formatStory2.label "OpenDocument 形式は LibreOffice を使用します">
+<!ENTITY contact.label "作者にメールで問い合わせる">

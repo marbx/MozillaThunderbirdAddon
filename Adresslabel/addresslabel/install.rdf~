@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
+  <Description about="urn:mozilla:install-manifest">
+    <em:id>AddressLabel@Markus</em:id>
+    <em:type>2</em:type>
+    <em:name>AddressLabel</em:name>
+    <em:version>0.3</em:version>
+    <em:creator>Markus</em:creator>
+    <em:description>Formats selected cards for printing as address labels. <br/>Creates an HTML file. All dimensions can be specified, to fit any given address label sheet. Data source can be specified, sender can be specified. Mailinglists are ignored. <br/><br/>STATUS: Tested on Windows and Mac. Help welcome for HTML CSS (first page negative top margin offset) and file character encoding (how to specify UTF-8).</em:description>
+    <em:optionsURL>chrome://addresslabel/content/preferences.xul</em:optionsURL>
+    <em:targetApplication>
+      <Description>
+        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Thunderbird -->
+        <em:minVersion>20.0</em:minVersion>
+        <em:maxVersion>29.0</em:maxVersion>
+      </Description>
+    </em:targetApplication>
+  </Description>
+</RDF>

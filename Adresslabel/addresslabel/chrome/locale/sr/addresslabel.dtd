@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Адресирај са пошиљаоцем">
+<!ENTITY generateAddressLabel0 "Адресирај без пошиљаоца">
+<!ENTITY settings.label "Поставке">
+<!ENTITY Input.label "Улаз">
+<!ENTITY choosePrimaryAddress "Главна адреса">
+<!ENTITY Home.label "Кућа">
+<!ENTITY Work.label "Посао">
+<!ENTITY addressFailure.label "Ако главна адреса недостаје,">
+<!ENTITY Trysecondary.label "користи помоћну адресу">
+<!ENTITY Printanyhow.label "одштампај">
+<!ENTITY Skip.label "прескочи">
+<!ENTITY name_ord.label "Редослед имена">
+<!ENTITY name_ordFL.label "Име, презиме">
+<!ENTITY name_ordLF.label "Презиме, име">
+<!ENTITY company_loc.label "Предузеће">
+<!ENTITY company_loc1.label "изнад имена">
+<!ENTITY company_loc2.label "испод имена">
+<!ENTITY company_loc0.label "није приказано">
+<!ENTITY sender.label "Пошиљаоцем">
+<!ENTITY ignoreCountry "Не штампај назив ове земље">
+<!ENTITY Labellayout.label "Изглед натписа">
+<!ENTITY NOFcolumns "Хоризонтално уметање (колоне)">
+<!ENTITY NOFrows "Вертикално уметање (редови)">
+<!ENTITY labelMarginL "Лева маргина (мм)">
+<!ENTITY labelMarginT "Горња маргина (мм)">
+<!ENTITY paperMarginL "Лева маргина папира (мм)">
+<!ENTITY paperMarginT "Горња маргина папира (мм)">
+<!ENTITY Fsize.label "Величина словолика (у тачкама)">
+<!ENTITY FontSize0 "Пошиљалац">
+<!ENTITY FontSize1 "Прималац">
+<!ENTITY Output.label "Излаз">
+<!ENTITY format.label "Облик">
+<!ENTITY formatStory1.label "PostScript и Pdf су ограничени на ISO Latin-1">
+<!ENTITY formatStory2.label "Кристи LibreOffice за OpenDocument">
+<!ENTITY contact.label "Пошаљи поруку програмеру">

@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "带发件人的标签">
+<!ENTITY generateAddressLabel0 "不带发件人的标签">
+<!ENTITY settings.label "设置">
+<!ENTITY Input.label "输入">
+<!ENTITY choosePrimaryAddress "主地址">
+<!ENTITY Home.label "家庭">
+<!ENTITY Work.label "工作">
+<!ENTITY addressFailure.label "如果主地址丢失">
+<!ENTITY Trysecondary.label "选择其他地址">
+<!ENTITY Printanyhow.label "仍然显示">
+<!ENTITY Skip.label "跳过">
+<!ENTITY name_ord.label "名称顺序">
+<!ENTITY name_ordFL.label "名，姓">
+<!ENTITY name_ordLF.label "姓，名">
+<!ENTITY company_loc.label "公司">
+<!ENTITY company_loc1.label "上面的名字">
+<!ENTITY company_loc2.label "下面的名字">
+<!ENTITY company_loc0.label "不显示">
+<!ENTITY sender.label "发件人地址">
+<!ENTITY ignoreCountry "不打印国家名">
+<!ENTITY Labellayout.label "页面布局">
+<!ENTITY NOFcolumns "标签横向排列 （列）">
+<!ENTITY NOFrows "标签纵向排列 （排）">
+<!ENTITY labelMarginL "左边距 （毫米）">
+<!ENTITY labelMarginT "上边距 （毫米）">
+<!ENTITY paperMarginL "页面左边距 （毫米）">
+<!ENTITY paperMarginT "页面上边距 （毫米）">
+<!ENTITY Fsize.label "字号">
+<!ENTITY FontSize0 "发件人">
+<!ENTITY FontSize1 "收件人">
+<!ENTITY Output.label "输出">
+<!ENTITY format.label "格式">
+<!ENTITY formatStory1.label "PostScript和PDF被限制为Iso Latin-1。">
+<!ENTITY formatStory2.label "Word无法打开单个文件OpenDocuments，LibreOffice则可。">
+<!ENTITY contact.label "发邮件给程序员">

@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://addresslabel/locale/addresslabel.dtd">
+<prefwindow id="slsettings-window"
+	    title="Settings"
+	    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/x-javascript" src="chrome://addresslabel/content/preferences.js"/>
+  <prefpane id="settings" label="&settings.label;">
+    <preferences>
+      <preference id="pref_senderAddress"   name="extensions.addresslabel.senderAddress"   type="string"/>
+      <preference id="pref_addressType"     name="extensions.addresslabel.addressType"     type="string"/>
+      <preference id="pref_FontSize0"       name="extensions.addresslabel.FontSize0"       type="string"/>
+      <preference id="pref_FontSize1"       name="extensions.addresslabel.FontSize1"       type="string"/>
+      <preference id="pref_NOFcolumns"      name="extensions.addresslabel.NOFcolumns"      type="string"/>
+      <preference id="pref_NOFrows"         name="extensions.addresslabel.NOFrows"         type="string"/>
+      <preference id="pref_paperMarginL"    name="extensions.addresslabel.paperMarginL"    type="string"/>
+      <preference id="pref_labelMarginL"    name="extensions.addresslabel.labelMarginL"    type="string"/>
+      <preference id="pref_paperMarginTop"  name="extensions.addresslabel.paperMarginTop"  type="string"/>
+      <preference id="pref_addressFailure"  name="extensions.addresslabel.addressFailure"  type="string"/>
+      <preference id="pref_name_ord"        name="extensions.addresslabel.name_ord"        type="string"/>
+      <preference id="pref_company_loc"	    name="extensions.addresslabel.company_loc"     type="string"/>
+      <preference id="pref_ignoreCountry"   name="extensions.addresslabel.ignoreCountry"   type="string"/>
+      <preference id="pref_outputformat"    name="extensions.addresslabel.outputformat"    type="string"/>
+      <preference id="pref_paperformat"     name="extensions.addresslabel.paperformat"     type="string"/>
+    </preferences>
+
+
+    <groupbox>
+      <caption label="&Input.label;"/>    
+      <grid><columns><column/><column/><column/></columns>
+	<rows> 
+	  <row>
+	    <label value="&choosePrimaryAddress;"/>
+	    <menulist preference="pref_addressType">
+	      <menupopup>
+		<menuitem label="&Work.label;" value="Work"/>
+		<menuitem label="&Home.label;" value="Home"/>
+	      </menupopup>
+	    </menulist>
+	    <label value="&addressFailure.label;"/>
+	    <menulist preference="pref_addressFailure">
+	      <menupopup>
+		<menuitem label="&Trysecondary.label;" value="second"/>
+		<menuitem label="&Printanyhow.label;"  value="pass"/>
+		<menuitem label="&Skip.label;"         value="skip"/>
+	      </menupopup>
+	    </menulist>
+	    <spacer flex="1"/>
+	  </row>
+	  <row>
+	    <label value="&name_ord.label;"/>
+	    <menulist preference="pref_name_ord">
+	      <menupopup>
+		<menuitem label="&name_ordFL.label;" value="FL"/>
+		<menuitem label="&name_ordLF.label;" value="LF"/>
+	      </menupopup>
+	    </menulist>
+	    <spacer flex="1"/>
+	  </row>
+	  <row>
+            <label value="&company_loc.label;"/>
+	    <menulist preference="pref_company_loc">
+	      <menupopup>
+		<menuitem label="&company_loc1.label;" value="1"/>
+		<menuitem label="&company_loc2.label;" value="2"/>
+		<menuitem label="&company_loc0.label;" value="0"/>
+	      </menupopup>
+	    </menulist>
+	    <spacer flex="1"/>
+	  </row>
+	</rows>
+      </grid>
+
+      <label value=""/>
+      <hbox>
+	<label value="&sender.label;"/>
+	<textbox size="74" preference="pref_senderAddress"/>
+	<spacer flex="1"/>
+      </hbox>
+
+      <hbox>
+	<label value="&ignoreCountry;"/>
+	<textbox size="18" preference="pref_ignoreCountry"/>
+	<spacer flex="1"/>
+      </hbox>
+    </groupbox>
+
+    <label value=""/>
+    <groupbox>
+      <caption label="&Labellayout.label;"/>    
+      <grid><columns><column/><column/><column/></columns>
+	<rows> 
+	  <row>
+	    <label value="&NOFcolumns;"/><textbox size="2" type="number" min="1" max="9"  preference="pref_NOFcolumns" id="NOFcolumns"/>
+	    <label value="&NOFrows;"/>   <textbox size="2" type="number" min="2" max="99" preference="pref_NOFrows"    id="NOFrows"/>
+	    <spacer flex="1"/>
+	  </row>
+	  <row>
+	    <label value="&paperMarginL;"/>
+	    <textbox size="3" type="number" decimalplaces="0" min="0" preference="pref_paperMarginL"/>
+	    <label value="&paperMarginT;"/>
+	    <textbox size="3" type="number" decimalplaces="0" min="0" preference="pref_paperMarginTop"/>
+	    <spacer flex="1"/>
+	  </row>
+	</rows>
+      </grid>
+    </groupbox>
+    
+    <label value=""/>
+    <groupbox>
+      <caption label="&Fsize.label;"/>
+      <hbox>
+	<label value="&FontSize0;"/><textbox size="2" type="number" min="4" max="20" preference="pref_FontSize0" id="FontSize0"/>
+	<label value="&FontSize1;"/><textbox size="2" type="number" min="8" max="40" preference="pref_FontSize1" id="FontSize1"/>
+	<spacer flex="1"/>
+      </hbox>
+    </groupbox>
+
+    <label value=""/>
+    <groupbox>
+      <caption label="&Output.label;"/>
+      <hbox>
+	<label value="&format.label;"/>
+	<menulist preference="pref_paperformat">
+	  <menupopup>
+	    <menuitem label="A4"     value="A4"/>
+	    <menuitem label="Letter" value="Letter"/>
+	  </menupopup>
+	</menulist>
+	<menulist preference="pref_outputformat">
+	  <menupopup>
+	    <menuitem label="Pdf"          value="pdf"/>
+	    <menuitem label="PostScript"   value="post"/>
+	    <menuitem label="OpenDocument" value="odt"/>
+	    <menuitem label="HTML"         value="html"/>
+	  </menupopup>
+	</menulist>
+      </hbox>
+      <label value="&formatStory1.label;"/> 
+      <label value="&formatStory2.label;"/> 
+    </groupbox>
+    
+    <hbox>
+      <spacer flex="1"/>
+      <label value="&contact.label;" href="mailto:markus.kramer@posteo.de" class="text-link"/>
+    </hbox>
+  </prefpane>
+</prefwindow>
+
+

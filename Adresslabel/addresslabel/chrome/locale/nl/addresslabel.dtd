@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Etiketten met afzender">
+<!ENTITY generateAddressLabel0 "Etiketten zonder afzender">
+<!ENTITY settings.label "Instellingen">
+<!ENTITY Input.label "Input">
+<!ENTITY choosePrimaryAddress "Voorkeur adrestype">
+<!ENTITY Home.label "Privé">
+<!ENTITY Work.label "Werk">
+<!ENTITY addressFailure.label "Als straat of plaats incorrect">
+<!ENTITY Trysecondary.label "kies andere adres">
+<!ENTITY Printanyhow.label "toch printen">
+<!ENTITY Skip.label "sla over">
+<!ENTITY name_ord.label "Volgorde naam">
+<!ENTITY name_ordFL.label "Voornaam achternaam">
+<!ENTITY name_ordLF.label "Achternaam voornaam ">
+<!ENTITY company_loc.label "Organisatie">
+<!ENTITY company_loc1.label "Over naam">
+<!ENTITY company_loc2.label "Onder naam">
+<!ENTITY company_loc0.label "Niet printen">
+<!ENTITY sender.label "Afzenderlijstje">
+<!ENTITY ignoreCountry "Dit land niet printen">
+<!ENTITY Labellayout.label "Opmaak pagina">
+<!ENTITY NOFcolumns "Etiketten naast elkaar (kolommen)">
+<!ENTITY NOFrows "Etiketten onder elkaar (rijen)">
+<!ENTITY labelMarginL "Marge links (mm)">
+<!ENTITY labelMarginT "Marge boven (mm)">
+<!ENTITY paperMarginL "Marge links pagina (mm)">
+<!ENTITY paperMarginT "Marge boven pagina (mm)">
+<!ENTITY Fsize.label "Lettergrootte">
+<!ENTITY FontSize0 "Afzender">
+<!ENTITY FontSize1 "Ontvanger">
+<!ENTITY Output.label "Output">
+<!ENTITY format.label "Formaat">
+<!ENTITY formatStory1.label "PostScript en Pdf zijn beperkt tot Iso Latin-1">
+<!ENTITY formatStory2.label "OpenDocument med LibreOffice openen">
+<!ENTITY contact.label "Mail aan de programmeur">

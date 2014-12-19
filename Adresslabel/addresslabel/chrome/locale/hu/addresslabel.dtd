@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Címzés a feladó nevével">
+<!ENTITY generateAddressLabel0 "Címzés a feladó neve nélkül">
+<!ENTITY settings.label "Beállítások">
+<!ENTITY Input.label "Input">
+<!ENTITY choosePrimaryAddress "Cím típusa">
+<!ENTITY Home.label "Magán">
+<!ENTITY Work.label "Üzleti">
+<!ENTITY addressFailure.label "Ha hiányzik az utcanév vagy a helységnév">
+<!ENTITY Trysecondary.label "válassza a másik címet">
+<!ENTITY Printanyhow.label "nyomtatás mégis">
+<!ENTITY Skip.label "cím kihagyása">
+<!ENTITY name_ord.label "Nevek sorrendje">
+<!ENTITY name_ordFL.label "Keresztnév vezetéknév">
+<!ENTITY name_ordLF.label "Vezetéknév keresztnév">
+<!ENTITY company_loc.label "Cég">
+<!ENTITY company_loc1.label "A név fölött">
+<!ENTITY company_loc2.label "A név alatt">
+<!ENTITY company_loc0.label "Elrejtés">
+<!ENTITY sender.label "Feladó címe">
+<!ENTITY ignoreCountry "Országnév elrejtése">
+<!ENTITY Labellayout.label "Címzés elrendezése">
+<!ENTITY NOFcolumns "Címkék egymás mellett">
+<!ENTITY NOFrows "Címkék egymás alatt">
+<!ENTITY labelMarginL "Baloldali margó (mm)">
+<!ENTITY labelMarginT "Fenti margó (mm)">
+<!ENTITY paperMarginL "Lap baloldali margó (mm)">
+<!ENTITY paperMarginT "Lap fenti margó (mm)">
+<!ENTITY Fsize.label "Betűméret">
+<!ENTITY FontSize0 "Feladó">
+<!ENTITY FontSize1 "Címzett">
+<!ENTITY Output.label "Output">
+<!ENTITY format.label "Formátum">
+<!ENTITY formatStory1.label "A PostScript és a Pdf Iso Latin-1-korlátozottan működnek.">
+<!ENTITY formatStory2.label "Use LibreOffice for OpenDocument">
+<!ENTITY contact.label "Email a programozónak">

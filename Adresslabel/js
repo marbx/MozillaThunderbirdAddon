@@ -1,0 +1,3 @@
+/Users/markuskramer/Downloads/mozilla/mozjs-24.2.0/js/src/build-release/dist/bin/js24 --strict $1
+#java -classpath rhino1_7R4/js.jar org.mozilla.javascript.tools.shell.Main $1
+

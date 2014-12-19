@@ -1,0 +1,35 @@
+<!ENTITY generateAddressLabel1 "Etichette con indirizzo del mittente">
+<!ENTITY generateAddressLabel0 "Etichette senza indirizzo del mittente">
+<!ENTITY settings.label "Impostazioni">
+<!ENTITY Input.label "Input">
+<!ENTITY choosePrimaryAddress "Indirizzo principale">
+<!ENTITY Home.label "Casa">
+<!ENTITY Work.label "Lavoro">
+<!ENTITY addressFailure.label "Se strada o città  mancano">
+<!ENTITY Trysecondary.label "prendi indirizzo alternativo">
+<!ENTITY Printanyhow.label "stampa comunque">
+<!ENTITY Skip.label "non stampare">
+<!ENTITY name_ord.label "Ordine nome">
+<!ENTITY name_ordFL.label "Prenome cognome">
+<!ENTITY name_ordLF.label "Cognome prenome ">
+<!ENTITY company_loc.label "Organizzazione">
+<!ENTITY company_loc1.label "Sopra nome">
+<!ENTITY company_loc2.label "Sotto nome">
+<!ENTITY company_loc0.label "Ignora">
+<!ENTITY sender.label "Indirizzo del mittente">
+<!ENTITY ignoreCountry "Ignora il nome di questo paese ">
+<!ENTITY Labellayout.label "Layout">
+<!ENTITY NOFcolumns "Etichette accanto (colonne)">
+<!ENTITY NOFrows "Etichette una sopra l'altra (righe)">
+<!ENTITY labelMarginL "Margine sinistro (mm)">
+<!ENTITY labelMarginT "Margine superiore (mm)">
+<!ENTITY paperMarginL "Margine sinistro della pagina (mm)">
+<!ENTITY paperMarginT "Margine superiore della pagina (mm)">
+<!ENTITY Fsize.label "Dimensioni carattere">
+<!ENTITY FontSize0 "Indirizzo del mittente">
+<!ENTITY FontSize1 "Destinatario">
+<!ENTITY Output.label "Output">
+<!ENTITY format.label "Formato">
+<!ENTITY formatStory1.label "PostScript e Pdf sono limitati a Iso Latin-1">
+<!ENTITY formatStory2.label "OpenDocument si apre in LibreOffice ">
+<!ENTITY contact.label "Mail al programmatore">

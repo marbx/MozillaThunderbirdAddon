@@ -1,0 +1,84 @@
+dn: cn=A AA
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: A
+sn: AA
+cn: A AA
+modifytimestamp: 0
+mozillaHomeStreet: PA
+mozillaHomeLocalityName: PA
+mozillaHomePostalCode: 111
+
+dn: cn=B B
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: B
+sn: B
+cn: B B
+modifytimestamp: 0
+mozillaHomeStreet: PB
+mozillaHomeLocalityName: PB
+mozillaHomePostalCode: 111
+
+dn: cn=C C
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: C
+sn: C
+cn: C C
+modifytimestamp: 0
+mozillaHomeStreet: PC
+mozillaHomeLocalityName: PC
+mozillaHomePostalCode: 111
+
+dn: cn=D D
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: D
+sn: D
+cn: D D
+modifytimestamp: 0
+mozillaHomeStreet: PD
+mozillaHomeLocalityName: PD
+mozillaHomePostalCode: 111
+
+dn: cn=E E
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: E
+sn: E
+cn: E E
+modifytimestamp: 1399037552
+mozillaHomeStreet: PE
+mozillaHomeLocalityName: PE
+mozillaHomePostalCode: 111
+
+dn: cn=F F
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+objectclass: mozillaAbPersonAlpha
+givenName: F
+sn: F
+cn: F F
+modifytimestamp: 0
+street: DF
+l: DF
+postalCode: 222
+
