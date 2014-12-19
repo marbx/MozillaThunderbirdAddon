@@ -1,7 +1,0 @@
-# 
-# https://developer.mozilla.org/de/docs/Chrome_Registration
-# 
-content addresslabel chrome/content/
-locale addresslabel en-US chrome/locale/en-US/
-locale addresslabel de-DE chrome/locale/de-DE/
-overlay chrome://messenger/content/addressbook/addressbook.xul chrome://addresslabel/content/addressbook.xul
