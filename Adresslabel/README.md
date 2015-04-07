@@ -3,6 +3,6 @@ My first Addon
 
 
 
-From Mac
+Written in Emacs on MacOS 10.6
 
 
