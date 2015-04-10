@@ -1,9 +1,9 @@
 /*
-Bla bla description
+  DESCRIPTION
 its called tabledoc because it has one table on a page.
 It encapsulates either a markup or a turtle document.
 
-todo JavaScript organisation issues
+  TODO JavaScript organisation issues
 This is just a flat list of functions that the 'main program' utilizes.
 Are global functions bad?
 Why?
@@ -27,7 +27,7 @@ The test for mmarkup needs sometimes is not enough and tests for html and odt, b
 
 
 /*
-In JavaScript/Scheme there is no output.
+In JavaScheme there is no output.
 So we have to assemble all output in a variable.
 This is OK.
 
@@ -78,7 +78,7 @@ function printSender(txt) {
 }
 
 /*
- for ODT, this code assumes that printSender is called before and cellEnd after. 
+for ODT, this code assumes that printSender is called before and cellEnd after. 
 Ugly
 There are three places tagged ugly-ODT-text
 */

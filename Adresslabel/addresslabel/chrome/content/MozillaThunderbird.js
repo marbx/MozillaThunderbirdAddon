@@ -79,17 +79,24 @@ function writeToFile(contents){
 	    stream.close();
 	    poorLog("writeToFile stream DONE");
 /*
-This Thunderbird add-on generates a file and opens it with nsIFile.launch.
-Launch is flagged. Looking for alternatives for launch I only found Jorges comment at
+Dear reviewer
+This Thunderbird add-on generates HTML, pdf, ps or odt and opens it.
+The only funnction I have found is nsIFile.launch().
+nsIFile.launch() is flagged. 
+Looking for alternatives I only found this comment from Jorge
 https://forums.mozilla.org/addons/viewtopic.php?f=7&t=14616&p=29594&hilit=launch+disallowed#p29594
 
 Quote
-launch should always be flagged because it can be potentially used to
-run executables in the system, so this needs to be looked at carefully
-by reviewers. You shouldn't worry about it if you're just opening a file.
+    launch should always be flagged because it can be potentially used to
+    run executables in the system, so this needs to be looked at carefully
+    by reviewers. You shouldn't worry about it if you're just opening a file.
 Quote end
+
+So please tell me: what should I use instead of nsIFile.launch()?
+You are the experts.
+Thank you, Markus
 */
-	    filePicker.file.launch();//How else open pdf/ps/HTML output?
+	    filePicker.file.launch();//How else open pdf/ps/HTML? See comment above.
 	}
 	poorLog("writeToFile DONE");
     } catch (e) {

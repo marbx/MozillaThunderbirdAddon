@@ -4,7 +4,7 @@
     <em:id>AddressLabel@Markus</em:id>
     <em:type>2</em:type>
     <em:name>AddressLabel</em:name>
-    <em:version>7dev</em:version>
+    <em:version>8</em:version>
     <em:creator>Markus</em:creator>
     <em:description>Create address labels</em:description>
     <em:optionsURL>chrome://addresslabel/content/preferences.xul</em:optionsURL>

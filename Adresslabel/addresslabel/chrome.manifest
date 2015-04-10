@@ -10,6 +10,7 @@ locale  addresslabel hu    chrome/locale/hu/
 locale  addresslabel it    chrome/locale/it/
 locale  addresslabel ja-JP chrome/locale/ja-JP/
 locale  addresslabel nl    chrome/locale/nl/
+locale  addresslabel pt    chrome/locale/pt/
 locale  addresslabel ru    chrome/locale/ru/
 locale  addresslabel sr    chrome/locale/sr/
 locale  addresslabel zh    chrome/locale/zh/

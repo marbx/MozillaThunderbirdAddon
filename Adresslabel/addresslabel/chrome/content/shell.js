@@ -1,5 +1,11 @@
-// Start from shell
+/* 
+Start from shell to test the non-Mozilla API JavaScript  
 
+  USAGE
+../../../js shell.js > ~/Downloads/AddressLabel.pdf
+open ~/Downloads/AddressLabel.pdf
+
+*/
 var errorString1 = "";
 load("shellData.js");
 //load("shellCalibrationData.js");
@@ -13,7 +19,7 @@ load("markupODT.js");
 senderAddress = "This is the sender";
 var printTheSender = true;         // defined in XUL
 
-var testcase = 0;
+var testcase = 3;
 //                     0        1        2        3     4   
 company_loc        = ["1"    , "1"    , "1"    , "1"     ][testcase];
 name_ord           = ["LF"   , "FL"   , "FL"   , "FL"    ][testcase];

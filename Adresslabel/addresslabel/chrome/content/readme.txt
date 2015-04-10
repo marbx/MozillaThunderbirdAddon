@@ -2,18 +2,18 @@
 
 Thanks to Fabian for help with Add-ons, Wolfgang for Spanish,
 Martin for Dutch, Tina for Italian, Victoria for English, Boris for
-Russian, Emőke for Hungarian, DakSrbija of BabelZilla for Serbian,
-mar of BabelZillafor Japanese, David for French.
+Russian, Emőke for Hungarian, David  for French, BabelZilla translators DakSrbija for Serbian,
+mar for Japanese, ouesten for Portuguese.
 
-Version 8 (December 2014) 
- - adds 'Label margin left' to page layout settings; inquired by Christian 
+Version 8 (April 2015) 
+ - corrects horizontal positions in Pdf and Ps; inquired by Christian 
 
 Version 7 (October 2014) 
  - uses also the 2nd line of the address (street); reported by Brigitte
 
 Version 6 (August 2014) 
  - simplifies settings by removing label size 
- - corrects Ps/pdf line break
+ - corrects Ps/Pdf line break
  - corrects Ps for Evince (showpage)
 
 Version 5 (July 2014)
