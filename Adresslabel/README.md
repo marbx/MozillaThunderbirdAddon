@@ -8,9 +8,12 @@ Open your addressbook and select any number of contacts, then left click (contex
 
 
 
+
+<img src="_pic/Example_Big.png" alt="Drawing" style="width: 20px;"/>
+
+öööö
+
 ![hihi](_pic/Example_Big.png?raw=true)
-
-
 
 
 ##Looking for a collaborator##
