@@ -13,8 +13,9 @@ Open your addressbook and select any number of contacts, then left click (contex
 
 
 
-##Looking for a maintainer##
-Do you want to become a maintainer?
+##Looking for a collaborator##
+Do you want to collaborate?
+Do youknow JavaScript?
 
 
 
