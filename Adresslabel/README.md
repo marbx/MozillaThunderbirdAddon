@@ -1,5 +1,6 @@
-##Input2##
-###Input3###
+##Input (your AddressBook)##
+Open your addressbook and select any number of contacts, then left click (context menu).
+
 
 
 
@@ -10,7 +11,10 @@
 ![hihi](_pic/Example_Big.png?raw=true)
 
 
-How to find a maintainer?
+
+
+##Looking for a maintainer##
+Do you want to become a maintainer?
 
 
 
