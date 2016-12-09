@@ -14,7 +14,7 @@ Version 7 (October 2014)
 Version 6 (August 2014) 
  - simplifies settings by removing label dimensions
  - corrects Ps and Pdf line break
- - corrects Ps for Evince (GNU Linx)
+ - corrects Ps for Evince (GNU Linux)
 
 Version 5 (July 2014)
  - introduces options for company

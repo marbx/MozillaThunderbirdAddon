@@ -109,7 +109,15 @@ function formatPages(printTheSender, adrARRAY){
 	    if (formattedCard.street2 != "") {
 		printAddress(formattedCard.street2);
 	    }
-	    printAddress(formattedCard.zipcode + " " + formattedCard.city);
+	    if (formattedCard.UK) {
+		printAddress(formattedCard.city);
+		if (formattedCard.state != "") {
+		    printAddress(formattedCard.state);
+		}
+		printAddress(formattedCard.zipcode);
+	    } else {
+		printAddress(formattedCard.zipcode + " " + formattedCard.city);
+	    }
 	    printAddress(formattedCard.country);
 	    cellEnd();
 	    if (count1 % NOFcolumns == 0) {
@@ -154,6 +162,7 @@ function formatCard(card){
     }
     rr.name    = TBCname;
     rr.company = TBCcompany;
+    rr.UK      = false;
     
     //todo logic: pass == default
     //todo logic: two variables px/sx --> one variable
@@ -166,8 +175,10 @@ function formatCard(card){
 	    rr.street  =  card.address [px];
 	    rr.street2 =  card.address2[px];
 	    rr.city    =  card.city    [px];
+	    rr.state   =  card.state   [px];
 	    rr.zipcode =  card.zipcode [px];
 	    rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
+	    rr.UK      = (card.country [px] == "UK");
 	}
 	if (mitigation == "second"){
 	    if (card.address[sx].length == 0 || card.city[sx].length == 0) {
@@ -177,16 +188,20 @@ function formatCard(card){
 		rr.street  =  card.address [sx];
 		rr.street2 =  card.address2[sx];
 		rr.city    =  card.city    [sx];
+		rr.state   =  card.state   [sx];		
 		rr.zipcode =  card.zipcode [sx];
 		rr.country = (card.country [sx] == ignoreCountry?"": card.country[sx]);
+		rr.UK      = (card.country [px] == "UK");
 	    }
 	}
     } else {
 	rr.street  =  card.address [px];
 	rr.street2 =  card.address2[px];
 	rr.city    =  card.city    [px];
+	rr.state   =  card.state   [px];
 	rr.zipcode =  card.zipcode [px];
 	rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
+	rr.UK      = (card.country [px] == "UK");
     }
     return rr;
 }

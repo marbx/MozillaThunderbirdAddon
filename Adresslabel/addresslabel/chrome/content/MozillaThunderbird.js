@@ -15,6 +15,7 @@ function ca2upi(card){
   	address2A = new Array(card.getProperty("HomeAddress2", ""), card.getProperty("WorkAddress2", ""));
 	zipcodeA  = new Array(card.getProperty("HomeZipCode", ""),  card.getProperty("WorkZipCode", ""));
 	cityA     = new Array(card.getProperty("HomeCity"   , ""),  card.getProperty("WorkCity"   , ""));
+	stateA    = new Array(card.getProperty("HomeState"  , ""),  card.getProperty("WorkState"  , ""));
 	countryA  = new Array(card.getProperty("HomeCountry", ""),  card.getProperty("WorkCountry", ""));
 	
 	return {
@@ -25,6 +26,7 @@ function ca2upi(card){
 	    address2   : address2A,
 	    zipcode    : zipcodeA,
 	    city       : cityA,
+	    state      : stateA,
 	    country    : countryA
 	}
     } catch (e) {
