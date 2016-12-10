@@ -11,6 +11,18 @@ Open your addressbook and select any number of contacts, then left click (contex
 
 <img src="_pic/Example_Big.png" alt="Drawing" width="320px;"/>
 
+## Next steps ##
+
+Verify or increase precsision 
+
+[Australia format](http://auspost.com.au/education/letterwriting/students/addressing.html)
+
+Refactor
+
+Verify ODT and HTML
+
+
+
 
 ##I am looking for a collaborator##
 Do you want to collaborate?
