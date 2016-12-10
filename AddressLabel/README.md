@@ -9,7 +9,7 @@ Open your addressbook and select any number of contacts, then left click (contex
 
 
 
-<img src="_pic/Example_Big.png" alt="Drawing" width="320px;"/>
+<img src="_pic/Example_Big.png" alt="Drawing" width="240px;"/>
 
 ## Next steps ##
 
