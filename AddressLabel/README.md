@@ -13,7 +13,7 @@ Open your addressbook and select any number of contacts, then left click (contex
 
 ## Next steps ##
 
-[See](NEXT-STEPS.md)
+[See here](NEXT-STEPS.md)
 
 
 
