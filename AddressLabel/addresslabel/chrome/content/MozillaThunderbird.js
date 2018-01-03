@@ -94,10 +94,10 @@ Quote
     by reviewers. You shouldn't worry about it if you're just opening a file.
 Quote end
 
-So please don't worry.
+Please regard this in your careful review, or let me know of a better alternative.
 Thank you, Markus
 */
-	    filePicker.file.launch();//How else open pdf/ps/HTML? See comment above.
+	    filePicker.file.launch();//Open the generated pdf/ps/HTML. See comment from Mozilla above.
 	}
 	poorLog("writeToFile DONE");
     } catch (e) {
