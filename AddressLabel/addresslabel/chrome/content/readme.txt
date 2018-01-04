@@ -1,3 +1,20 @@
+SOMEWHERE IN THE MOZILLA UPLOAD PROCESS?
+
+
+This is a Thunderbird Add-on, not a Firefox Add-on.
+
+Create address labels from selected contacts in pdf, odt, ps or html.
+
+Usage
+1) Open Thunderbird.
+2) Chose Add-on settings.
+3) In the Address Book, select contacts and right click.
+4) Print with "Actual Size" (not "Fit to Page").
+
+
+
+
+
 About this extension
 
 
