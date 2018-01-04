@@ -115,6 +115,9 @@ function formatPages(printTheSender, adrARRAY){
 		    printAddress(formattedCard.state);
 		}
 		printAddress(formattedCard.zipcode);
+	    } else if (formattedCard.US){
+		// Craig Ewing
+		printAddress(formattedCard.city + ", " + formattedCard.state + " " + formattedCard.zipcode);
 	    } else {
 		printAddress(formattedCard.zipcode + " " + formattedCard.city);
 	    }
@@ -163,6 +166,7 @@ function formatCard(card){
     rr.name    = TBCname;
     rr.company = TBCcompany;
     rr.UK      = false;
+    rr.US      = false;
     
     //todo logic: pass == default
     //todo logic: two variables px/sx --> one variable
@@ -179,6 +183,7 @@ function formatCard(card){
 	    rr.zipcode =  card.zipcode [px];
 	    rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
 	    rr.UK      = (card.country [px] == "UK");
+	    rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
 	}
 	if (mitigation == "second"){
 	    if (card.address[sx].length == 0 || card.city[sx].length == 0) {
@@ -192,6 +197,7 @@ function formatCard(card){
 		rr.zipcode =  card.zipcode [sx];
 		rr.country = (card.country [sx] == ignoreCountry?"": card.country[sx]);
 		rr.UK      = (card.country [px] == "UK");
+		rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
 	    }
 	}
     } else {
@@ -202,6 +208,7 @@ function formatCard(card){
 	rr.zipcode =  card.zipcode [px];
 	rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
 	rr.UK      = (card.country [px] == "UK");
+	rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
     }
     return rr;
 }
