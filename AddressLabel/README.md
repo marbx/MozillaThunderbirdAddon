@@ -1,27 +1,41 @@
-##Input is your AddressBook##
+This is a Thunderbird Add-on, not a Firefox Add-on.
+
+
+## Input are the addresses of your Thunderbird AddressBook ##
 Open your addressbook and select any number of contacts, then left click (context menu).
 
 
 
-
-##Output##
-
-
+## Output ##
 
 
 <img src="_pic/Example_Big.png" alt="Drawing" width="240px;"/>
 
-## Next steps ##
 
-[See here](NEXT-STEPS.md)
+Addresses are formatted by default as:
+
+    ZIP-code City
+    Country
+
+When country is "UK":
+
+    City
+    (State/province)
+    ZIP-code 
+    Country
+
+When country is "US", "USA", or "United States":
+
+    City, State ZIP-code
+    Country
+
+
+In the options, you can specify one country to be omitted from being printed.
 
 
 
-
-##I am looking for a collaborator##
-Do you want to collaborate?
-
-Do you know JavaScript?
+## I am looking for a collaborator ##
+[See Next steps](NEXT-STEPS.md)
 
 
 
