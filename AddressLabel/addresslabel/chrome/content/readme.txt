@@ -1,16 +1,22 @@
-?WHERE IS THIS--- About this extension ---WHERE IS THIS?
+About this extension
 
 
-Addresses are formatted as:
-. (ZIP/Postal Code) (City)
-. [Country]
-Except when country is "UK":
-. (City)
+Addresses are formatted by default as:
+. ZIP-code City
+. Country
+
+When country is "UK":
+. City
 . (State/province)
-. (ZIP/Postal Code)
-. [Country]
+. ZIP-code
+. Country
 
-You can specify one country, probably the country you live in, to be omitted from being printed.
+When country is "US", "USA", or "United States":
+. City, State ZIP-code
+. Country
+
+
+In the options, you can specify one country to be omitted from being printed.
 
 
 
