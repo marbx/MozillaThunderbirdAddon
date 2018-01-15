@@ -1,6 +1,8 @@
 
 ## Next steps ##
 
+[Cardbook support](https://addons.mozilla.org/de/thunderbird/addon/cardbook)
+
 Verify or increase precsision 
 
 [Australia format](http://auspost.com.au/education/letterwriting/students/addressing.html)
