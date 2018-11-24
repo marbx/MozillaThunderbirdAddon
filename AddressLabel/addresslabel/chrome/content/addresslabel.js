@@ -183,7 +183,7 @@ function formatCard(card){
 	    rr.zipcode =  card.zipcode [px];
 	    rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
 	    rr.UK      = (card.country [px] == "UK");
-	    rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
+	    rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States" || card.country [px] == "Australia");
 	}
 	if (mitigation == "second"){
 	    if (card.address[sx].length == 0 || card.city[sx].length == 0) {
@@ -196,8 +196,8 @@ function formatCard(card){
 		rr.state   =  card.state   [sx];		
 		rr.zipcode =  card.zipcode [sx];
 		rr.country = (card.country [sx] == ignoreCountry?"": card.country[sx]);
-		rr.UK      = (card.country [px] == "UK");
-		rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
+		rr.UK      = (card.country [sx] == "UK");
+		rr.US      = (card.country [sx] == "US" || card.country [sx] == "USA" || card.country [sx] == "United States" || card.country [sx] == "Australia");
 	    }
 	}
     } else {
@@ -208,7 +208,7 @@ function formatCard(card){
 	rr.zipcode =  card.zipcode [px];
 	rr.country = (card.country [px] == ignoreCountry?"": card.country[px]);
 	rr.UK      = (card.country [px] == "UK");
-	rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States");
+	rr.US      = (card.country [px] == "US" || card.country [px] == "USA" || card.country [px] == "United States" || card.country [px] == "Australia");
     }
     return rr;
 }
