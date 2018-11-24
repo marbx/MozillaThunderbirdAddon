@@ -1,0 +1,7 @@
+XUL_main [Exception... "Component returned failure code: 0x80004002 (NS_NOINTERFACE) [nsIPrefBranch.getComplexValue]"  nsresult: "0x80004002 (NS_NOINTERFACE)"  location: "JS frame :: chrome://addresslabel/content/MozillaThunderbird.js :: P2S :: line 119"  data: no]
+
+
+
+https://wiki.mozilla.org/Thunderbird/Add-ons_Guide_57
+
+
