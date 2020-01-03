@@ -2,6 +2,16 @@ Thanks to Fabian for getting me started with Add-ons, Wolfgang for Spanish,
 Martin for Dutch, Tina for Italian, Victoria for English, Boris for
 Russian, Emöke for Hungarian, David for French, BabelZilla translators DakSrbija for Serbian, mar for Japanese, ouesten for Portuguese.
 
+
+Version 12 (Jan 2018)
+- Security
+
+Version 11 (Jan 2018)
+- 12
+
+Version 10 (Jan 2018)
+- adds US format
+
 Version 9 (December 2016)
 - adds UK format; thanks to Alan
 - using GitHub as support site.
